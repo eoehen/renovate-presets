@@ -1,7 +1,7 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "description": "Use default Renovate configuration for eoehen repositories",
-    "extends": [ "config:best-practices" ],
+    "extends": [ "config:best-practices", "schedule:nonOfficeHours" ],
     "labels": [ "dependencies" ],
     "prHourlyLimit": 3,
     "packageRules": [
