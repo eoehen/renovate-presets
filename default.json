@@ -1,0 +1,18 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "Use default Renovate configuration for eoehen repositories",
+    "extends": [ "config:best-practices" ],
+    "labels": [ "dependencies" ],
+    "prHourlyLimit": 3,
+    "packageRules": [
+      {
+        "matchUpdateTypes": ["major"],
+        "dependencyDashboardApproval": true
+      },
+      {
+        "matchUpdateTypes": ["patch"],
+        "matchCurrentVersion": "!/^0/",
+        "automerge": true
+      }
+    ]
+}
